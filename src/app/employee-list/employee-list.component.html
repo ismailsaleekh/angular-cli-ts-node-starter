@@ -1,0 +1,22 @@
+<div>
+  <div class="container">
+    <h2>Список действующий сотрудников</h2>
+    <br>
+     
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Фамилия</th>
+          <th>Имя</th>
+         
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let employee of employees">
+          <td>{{employee.lastname}}</td>
+          <td>{{employee.name}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
